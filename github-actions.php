@@ -18,8 +18,8 @@ add_action(
 	'admin_notices',
 	function () {
 		?>
-		<div class="notice notice-success is-dismissible">
-			<p><?php esc_html_e( 'Done!', 'github-actions' ); ?></p>
+		<div class="notice notice-info">
+			<p><?php esc_html_e( 'GITHUB ACTIONS PLUGIN IS PRESENT', 'github-actions' ); ?></p>
 		</div>
 		<?php
 	}
