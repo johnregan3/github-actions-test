@@ -1,7 +1,8 @@
 name: Flywheel SSH Deploy GA Plugin
 on:
   push:
-    branches: [ trunk ]
+    branches:
+      - 'trunk'
 jobs:
   build:
     runs-on: ubuntu-latest
