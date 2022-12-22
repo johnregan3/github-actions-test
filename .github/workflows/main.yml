@@ -16,4 +16,4 @@ jobs:
         REMOTE_USER: ${{ secrets.SSH_USER }}
         ARGS: "-rltgoDzvO"
         EXCLUDE: ".git, .github"
-        TARGET: "/www/wp-content/plugins/"
+        TARGET: "/www/wp-content/plugins/github-actions"
