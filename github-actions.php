@@ -19,7 +19,7 @@ add_action(
 	function () {
 		?>
 		<div class="notice notice-error">
-			<p><?php esc_html_e( 'GITHUB ACTIONS PLUGIN IS WORKING!', 'github-actions' ); ?></p>
+			<p><?php esc_html_e( 'GITHUB ACTIONS PLUGIN IS WORKING!!!', 'github-actions' ); ?></p>
 		</div>
 		<?php
 	}
