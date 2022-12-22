@@ -18,8 +18,8 @@ add_action(
 	'admin_notices',
 	function () {
 		?>
-		<div class="notice notice-success">
-			<p><?php esc_html_e( 'GITHUB ACTIONS PLUGIN IS PRESENT', 'github-actions' ); ?></p>
+		<div class="notice notice-error">
+			<p><?php esc_html_e( 'GITHUB ACTIONS PLUGIN IS WORKING!!!', 'github-actions' ); ?></p>
 		</div>
 		<?php
 	}
