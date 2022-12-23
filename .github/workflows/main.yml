@@ -11,7 +11,7 @@ jobs:
         - name: Run PHP CS Fixer
           uses: docker://oskarstark/php-cs-fixer-ga
           with:
-              args: --diff --dry-run
+              args: --dry-run
         - name: WP Core check
           uses: 10up/wpcs-action@stable
           with:
