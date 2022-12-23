@@ -10,6 +10,7 @@ jobs:
         - uses: actions/checkout@v3
         - name: Run PHP CS Fixer
           uses: docker://oskarstark/php-cs-fixer-ga
+          run: phpcbf -i
           with:
               args: --dry-run
         - name: WP Core check
