@@ -9,7 +9,7 @@ jobs:
       steps:
         - uses: actions/checkout@v3
         - name: WP Core check
-          uses: johnregan3/wpcs-phpcbf-action@develop
+          uses: 10up/wpcs-action@develop
           with:
             enable_warnings: true
             standard: 'WordPress-Core'
