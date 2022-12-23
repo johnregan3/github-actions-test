@@ -13,7 +13,7 @@ jobs:
           with:
               args: --diff --dry-run
         - name: WP Core check
-          uses: 10up/wpcs-action@develop
+          uses: 10up/wpcs-action@stable
           with:
             enable_warnings: true
             standard: 'WordPress-Core'
