@@ -11,9 +11,9 @@ jobs:
     - name: Deploy GA Plugin to Server
       uses: easingthemes/ssh-deploy@main
       env:
-        SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        SSH_PRIVATE_KEY: ${{ secrets.ED25519_KEY }}
         REMOTE_HOST: ssh.getflywheel.com
         REMOTE_USER: ${{ secrets.SSH_USER }}
         ARGS: "-rltgoDzvO"
         EXCLUDE: ".git, .github"
-        TARGET: "/www/wp-content/plugins/github-actions"
+        TARGET: "/www/wp-content/plugins/"
