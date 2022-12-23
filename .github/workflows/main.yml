@@ -1,8 +1,7 @@
 name: WPCS check
-on:
-  push:
-    branches:
-      - 'trunk'
+
+on: push
+
 jobs:
   phpcs:
       name: VIPCS
@@ -12,7 +11,7 @@ jobs:
         - name: WP Core check
           uses: 10up/wpcs-action@stable
           with:
-            enable_warnings: true
+            enable_warnings: 'true'
             standard: 'WordPress-Core'
             extra_args: '--report-json=./phpcs.json'
         - name: Update summary
