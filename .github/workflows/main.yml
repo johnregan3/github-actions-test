@@ -12,7 +12,7 @@ jobs:
           uses: johnregan3/wpcs-phpcbf-action@develop
           with:
             enable_warnings: true
-            enable_phpcbf: true
+            enable_phpcbf: false
             standard: 'WordPress-Core'
             extra_args: '--report-json=./phpcs.json'
         - name: Update summary
