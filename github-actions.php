@@ -19,7 +19,9 @@ add_action(
 	function () {
 		?>
 		<div class="notice notice-error">
+			<?php if ( $_GET['TESTING'] ) : ?>
 			<p><?php esc_html_e('GITHUB ACTIONS PLUGIN IS WORasdfasfKIgn!!'); ?></p>
+			<?php endif; ?>
 		</div>
 		<?php
 	}
