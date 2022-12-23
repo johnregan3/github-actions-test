@@ -13,3 +13,7 @@ jobs:
           with:
             enable_warnings: true
             standard: 'WordPress-Core'
+        - name: Run PHP CS Fixer
+          uses: docker://oskarstark/php-cs-fixer-ga
+          with:
+              args: --diff --dry-run
