@@ -19,8 +19,8 @@ add_action(
 	function () {
 		?>
 		<div class="notice notice-error">
-			<?php if ( $_GET['TESTING'] ) : ?>
-			<p><?php esc_html_e('this is the plugin', 'github-actions'); ?></p>
+			<?php if ( $_GET['TESTING'] && in_array( 'this', array( 'something', 'something_else' ) ) ) : ?>
+				<p><?php esc_html_e('this is the plugin', 'github-actions'); ?></p>
 			<?php endif; ?>
 		</div>
 		<?php
