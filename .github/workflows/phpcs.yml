@@ -1,0 +1,13 @@
+name: Coding Standards Fixes & Check
+
+on: push
+
+jobs:
+  phpcs:
+      name: Run WPCS/PHPCBF
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Run WPCS & PHPCBF
+          uses: johnregan3/wpcs-phpcbf-action@develop
+
