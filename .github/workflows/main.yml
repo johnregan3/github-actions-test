@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
     - name: Deploy GA Plugin to Server
       uses: easingthemes/ssh-deploy@main
       env:
@@ -16,4 +20,3 @@ jobs:
         REMOTE_USER: ${{ secrets.SSH_USER }}
         ARGS: "-rltgoDzvO"
         EXCLUDE: ".git, .github"
-        TARGET: "/www/wp-content/plugins/"
