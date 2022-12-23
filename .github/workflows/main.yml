@@ -7,11 +7,11 @@ jobs:
       name: VIPCS
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
-        - name: VIPCS check
+        - uses: actions/checkout@v3
+        - name: WP Core check
           uses: 10up/wpcs-action@stable
           with:
-            standard: 'WordPress-VIP-Go'
+            standard: 'WordPress-Core'
             extra_args: '--report-json=./phpcs.json'
             enable_warnings: true
         - name: Update summary
