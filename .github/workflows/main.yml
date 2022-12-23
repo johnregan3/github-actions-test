@@ -9,11 +9,10 @@ jobs:
       steps:
         - uses: actions/checkout@v3
         - name: WP Core check
-          uses: johnregan3/wpcs-phpcbf-action@develop
+          uses: 10up/wpcs-action@stable
           with:
             enable_warnings: true
-            enable_phpcbf: true
-            standard: '10up-Default'
+            standard: 'WordPress-Core'
             extra_args: '--report-json=./phpcs.json'
         - name: Update summary
           run: |
