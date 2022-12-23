@@ -8,12 +8,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
+        - name: Run PHP CS Fixer
+          uses: docker://oskarstark/php-cs-fixer-ga
+          with:
+              args: --diff --dry-run
         - name: WP Core check
           uses: 10up/wpcs-action@develop
           with:
             enable_warnings: true
             standard: 'WordPress-Core'
-        - name: Run PHP CS Fixer
-          uses: docker://oskarstark/php-cs-fixer-ga
-          with:
-              args: --diff --dry-run
+
