@@ -1,15 +1,15 @@
-name: WPCS check
+name: Coding Standards Fixes & Check
 
 on: push
 
 jobs:
   phpcs:
-      name: VIPCS
+      name: WPCS
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v3
         - name: WP Core check
-          uses: 10up/wpcs-action@stable
+          uses: johnregan3/wpcs-phpcbf-actionn@develop
           with:
             enable_warnings: true
             standard: 'WordPress-Core'
