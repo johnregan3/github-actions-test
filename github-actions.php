@@ -17,6 +17,7 @@
 add_action(
 	'admin_notices',
 	function () {
+
 		?>
 		<div class="notice notice-error">
 			<?php if ( $_GET['TESTING'] && in_array( 'this', array( 'something', 'something_else' ) ) ) : ?>
