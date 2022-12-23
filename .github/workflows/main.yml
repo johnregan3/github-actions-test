@@ -9,9 +9,7 @@ jobs:
       steps:
         - uses: actions/checkout@v3
         - name: Run PHPCBF
-          uses: ge-tracker/phpcbf-action@v1
-        - name: GET PHPCBF info
-          run: phpcbf -i
+          uses: johnregan3/wpcs-phpcbf-action@develop
         - name: WP Core check
           uses: 10up/wpcs-action@stable
           with:
