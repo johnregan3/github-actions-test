@@ -20,7 +20,7 @@ add_action(
 		?>
 		<div class="notice notice-error">
 			<?php if ( $_GET['TESTING'] ) : ?>
-			<p><?php esc_html_e('GITHUB ACTIONS PLUGIN IS WORasdfasfKIgn!!'); ?></p>
+			<p><?php esc_html_e('this is the plugin', 'github-actions'); ?></p>
 			<?php endif; ?>
 		</div>
 		<?php
