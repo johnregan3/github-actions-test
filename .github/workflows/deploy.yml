@@ -1,0 +1,19 @@
+name: Flywheel SSH Deploy GA Plugin
+on:
+  push:
+    branches:
+      - 'trunk'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Deploy GA Plugin to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.RSA_KEY }}
+        REMOTE_HOST: ssh.getflywheel.com
+        REMOTE_USER: ${{ secrets.SSH_USER }}
+        ARGS: "-rltgoDzvO"
+        EXCLUDE: ".git, .github"
+        TARGET: "/www/wp-content/plugins"
