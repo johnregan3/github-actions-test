@@ -13,6 +13,7 @@ jobs:
           with:
             standard: 'WordPress-VIP-Go'
             extra_args: '--report-json=./phpcs.json'
+            enable_warnings: true
         - name: Update summary
           run: |
             npx --yes github:10up/phpcs-json-to-md --path ./phpcs.json --output ./phpcs.md
