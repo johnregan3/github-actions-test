@@ -13,4 +13,6 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.ID_ED25519_PRIVATE }}
         REMOTE_HOST: ssh.getflywheel.com
         REMOTE_USER: ${{ secrets.SSH_USER }}
+        SOURCE: "dist/"
+        EXCLUDE: "/dist/"
         TARGET: "/www/wp-content/plugins/"
