@@ -20,7 +20,7 @@ add_action(
 
 		?>
 		<div class="notice notice-error">
-			<?php if ( isset( $_GET['TESTING'] ) && in_array( $_GET['TESTING'], array( 'this', 'something_else', true ) ) ) : ?>
+			<?php if ( isset( $_GET['TESTING'] ) && in_array( $_GET['TESTING'], array( 'this', 'something_else' ), true ) ) : ?>
 				<p><?php esc_html_e( 'this is the plugin', 'github-actions' ); ?></p>
 			<?php endif; ?>
 		</div>
