@@ -8,10 +8,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: WP Core check
-          uses: 10up/wpcs-action@stable
-          with:
-            enable_warnings: true
-            standard: 'WordPress-Core'
+        uses: 10up/wpcs-action@stable
+        with:
+          enable_warnings: true
+          standard: 'WordPress-Core'
       - name: Create Test Files
         run: |
           touch test1.txt
