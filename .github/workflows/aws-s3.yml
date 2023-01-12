@@ -14,9 +14,6 @@ jobs:
         with:
           enable_warnings: true
           standard: 'WordPress-Core'
-      - name: Create Test Files
-        run: |
-          [ ! -d dist ] && mkdir -p dist
       - uses: keithweaver/aws-s3-github-action@v1.0.0
         name: Copy Single GA PHP File
         with:
