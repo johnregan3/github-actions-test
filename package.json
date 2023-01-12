@@ -1,0 +1,22 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "description": "A test repo",
+  "main": "README.md",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnregan3/github-actions-test.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "johnregan3",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/johnregan3/github-actions-test/issues"
+  },
+  "homepage": "https://github.com/johnregan3/github-actions-test#readme"
+}
