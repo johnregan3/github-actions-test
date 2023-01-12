@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: WP Core check
+      - name: Run WPCS
         uses: 10up/wpcs-action@stable
         with:
           enable_warnings: true
@@ -22,11 +22,11 @@ jobs:
           touch folder1/test3.txt
           echo "Test 3" >> folder1/test3.txt
       - uses: keithweaver/aws-s3-github-action@v1.0.0
-        name: Copy Single File
+        name: Copy Single GA PHP File
         with:
           command: cp
-          source: ./test1.txt
-          destination: s3://ithemes.ga.test/test1.txt
+          source: ./github-actions.php
+          destination: s3://ithemes.ga.test/github-actions.php
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-1
